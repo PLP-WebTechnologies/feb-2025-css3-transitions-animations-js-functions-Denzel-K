@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 & JavaScript Playground</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-magic"></i> Animation Playground</h1>
+            <div class="theme-toggle">
+                <span>Theme:</span>
+                <button id="light-theme" class="theme-btn active">Light</button>
+                <button id="dark-theme" class="theme-btn">Dark</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="animation-section">
+                <h2>CSS3 Animations</h2>
+                
+                <div class="animation-box" id="pulse-box">
+                    <h3>Pulse Animation</h3>
+                    <button id="pulse-btn" class="anim-btn">Click to Pulse</button>
+                </div>
+                
+                <div class="animation-box" id="rotate-box">
+                    <h3>Rotate Animation</h3>
+                    <div class="shape rotate-target"></div>
+                    <button id="rotate-btn" class="anim-btn">Spin It</button>
+                </div>
+                
+                <div class="animation-box" id="bounce-box">
+                    <h3>Bounce Animation</h3>
+                    <div class="ball bounce-target"></div>
+                    <button id="bounce-btn" class="anim-btn">Bounce Ball</button>
+                </div>
+            </section>
+
+            <section class="user-preferences">
+                <h2>User Preferences</h2>
+                <div class="pref-form">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                    <button id="save-prefs" class="save-btn">Save Preferences</button>
+                </div>
+                <div id="greeting" class="greeting-message"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Animation settings are saved between visits</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
